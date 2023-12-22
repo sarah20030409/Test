@@ -1,0 +1,4 @@
+repository "112-1whiteTerror2@Esonnxx@cloud"
+  path "/"
+    br "/main"
+    co "/main"
