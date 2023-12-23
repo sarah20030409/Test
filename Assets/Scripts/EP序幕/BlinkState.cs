@@ -26,6 +26,5 @@ public class BlinkState : MonoBehaviour
 
     void CloseBlink() {
         BlinkAnim.SetBool("Blink", false);
-        Debug.Log("BBB");
     }
 }
