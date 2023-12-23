@@ -82,6 +82,10 @@ public class openingVerse : MonoBehaviour
         WhiteSprite.SetActive(true);
         WhiteSwitch.SetBool("trunWhite",true);
 
+        yield return new
+        WaitForSeconds(DelayTime);
+        ChangeSceneFunction.ChangeScenes("BoatingScene");
+
     }
 
     void BlackAnimClose() {
