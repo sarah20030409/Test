@@ -7,20 +7,19 @@ public class MrWuFinalLetter : MonoBehaviour
     public GameObject SecondTitle;
     public GameObject WuAndFinalLetter;
     public Animator BlinkAnim;
-    public Animator WuAnim;
 
     public float TitleFade = 5f;
     // Start is called before the first frame update
     void Start()
     {
-
+        Invoke("SecondTitleFade", TitleFade);
+        Invoke("DoBlink", TitleFade - 1f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Invoke("SecondTitleFade",TitleFade);
-        Invoke("DoBlink", TitleFade - 1f);
+       
       
     }
 

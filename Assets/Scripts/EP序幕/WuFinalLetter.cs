@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WuLetter: MonoBehaviour
+public class WuFinalLetter : MonoBehaviour
 {
     //這是用來做吳瑞爐信封飄飄的
     public float LetterUp = 0f;
@@ -17,13 +17,13 @@ public class WuLetter: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(LetterUpAndBlink());
     }
 
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(LetterUpAndBlink());
+
     }
 
     private IEnumerator LetterUpAndBlink() {
@@ -33,12 +33,12 @@ public class WuLetter: MonoBehaviour
         LetterUpAnim.SetBool("LetterUp", true);
 
         yield return new
-       WaitForSeconds(6f);
-        BlinkAnim.SetBool("Blink", true);
+       WaitForSeconds(6.0f);
+        BlinkAnim.SetBool("Blink",true);
 
 
         yield return new
-       WaitForSeconds(1f);
+       WaitForSeconds(2.0f);
         WuAndLetter.SetActive(false);
         BigLetter.SetActive(true);
 

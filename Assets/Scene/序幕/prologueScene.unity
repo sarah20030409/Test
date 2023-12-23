@@ -3290,7 +3290,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 341441774}
-  - component: {fileID: 341441775}
   - component: {fileID: 341441776}
   m_Layer: 0
   m_Name: (3)theSecondTitle
@@ -3318,18 +3317,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &341441775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341441772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b25b85aaf16ee8540b1b03a8ba58f2b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &341441776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3345,7 +3332,6 @@ MonoBehaviour:
   SecondTitle: {fileID: 341441772}
   WuAndFinalLetter: {fileID: 406857167}
   BlinkAnim: {fileID: 1625646362}
-  WuAnim: {fileID: 0}
   TitleFade: 10
 --- !u!1 &354435047
 GameObject:
@@ -3925,7 +3911,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 406857167}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3cac5e0408b542409be5520b66683e1, type: 3}
+  m_Script: {fileID: 11500000, guid: cb15111e12e47404db849b7b4c34473e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   LetterUp: 5
@@ -4219,7 +4205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
+  m_ScaleFactor: 3.65
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
@@ -4237,9 +4223,9 @@ Canvas:
   m_GameObject: {fileID: 441647749}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_RenderMode: 1
+  m_Camera: {fileID: 1635741379}
+  m_PlaneDistance: 2.3
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -28086,7 +28072,7 @@ PrefabInstance:
     - target: {fileID: 4252871931040694157, guid: 4bcfd5dc1272d6748a1d8e304fd73a24,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.324
       objectReference: {fileID: 0}
     - target: {fileID: 4252871931040694157, guid: 4bcfd5dc1272d6748a1d8e304fd73a24,
         type: 3}

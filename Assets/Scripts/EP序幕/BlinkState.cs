@@ -10,21 +10,22 @@ public class BlinkState : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        bool isBlinking = BlinkAnim.GetBool("Blink");
 
-        if (isBlinking == true) {
-            Invoke("CloseBlink",3.0f);
+        if (BlinkAnim.GetBool("Blink") == true)
+        {
+            Invoke("CloseBlink", 3.0f);
         }
 
     }
 
     void CloseBlink() {
         BlinkAnim.SetBool("Blink", false);
+        Debug.Log("BBB");
     }
 }
