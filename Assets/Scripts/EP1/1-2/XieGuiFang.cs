@@ -23,7 +23,7 @@ public class XieGuiFang : MonoBehaviour
 
     private IEnumerator StartXieSence() {
         yield return new
-        WaitForSeconds(2.0f);
+        WaitForSeconds(1.0f);
         BlinkAnim.SetBool("Blink", true);
 
         yield return new
