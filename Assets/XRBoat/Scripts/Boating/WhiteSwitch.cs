@@ -9,9 +9,12 @@ public class WhiteSwitch : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         Invoke("WhiteScreen",2.0f);
-        
-        
+       
+
+
+
     }
 
     // Update is called once per frame
