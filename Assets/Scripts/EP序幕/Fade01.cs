@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Fade01 : MonoBehaviour
 {
-    public SpriteRenderer TitleSprite; //§ì§ìSpriteRenderer
-    private Color initialColor;//§ì§ìªì©lÃC¦â
+    public SpriteRenderer TitleSprite; //ï¿½ï¿½ï¿½SpriteRenderer
+    private Color initialColor;//ï¿½ï¿½ï¿½ï¿½lï¿½Cï¿½ï¿½
     public Color EndColor = new Color(0f,0f,0f,0f);
-    public float colorChangeSpeed = 0.2f; //¹L´ç®É¶¡
+    public float colorChangeSpeed = 0.2f; //ï¿½Lï¿½ï¿½É¶ï¿½
     public GameObject fadeTitle;
     public GameObject Officer;
 
