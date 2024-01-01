@@ -43,5 +43,13 @@ public class FishVender : MonoBehaviour
         yield return new
         WaitForSeconds(2.0f);
         HongDongSence.SetActive(true);
+
+        yield return new
+       WaitForSeconds(3.0f);
+        PaperOpenAnim.SetBool("PaperClose", true);
+
+        yield return new
+       WaitForSeconds(4.0f);
+        littlePaperAnim.SetBool("PaperDown", true);
     }
 }
