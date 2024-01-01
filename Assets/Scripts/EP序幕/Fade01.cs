@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Fade01 : MonoBehaviour
 {
-    public SpriteRenderer TitleSprite; //���SpriteRenderer
-    private Color initialColor;//����l�C��
+    public SpriteRenderer TitleSprite; 
+    private Color initialColor;
     public Color EndColor = new Color(0f,0f,0f,0f);
-    public float colorChangeSpeed = 0.2f; //�L��ɶ�
+    public float colorChangeSpeed = 0.2f;
     public GameObject fadeTitle;
     public GameObject Officer;
 
-    public float doBlink = 6f;
+    public float doBlink = 5f;
     public Animator BlinkAnim;
     
 
@@ -19,16 +19,16 @@ public class Fade01 : MonoBehaviour
     void Start()
     {
         initialColor = TitleSprite.color;
+        //StartCoroutine(FirstSecneSwitch());
 
+        Invoke("BlinkEye", doBlink);
     }
 
     // Update is called once per frame
     void Update()
     {
         Invoke("TitleFade", 1.5f);
-        Invoke("BlinkEye", doBlink);
         Invoke("SetFalse1SetTrue2", doBlink + 1f);
-
 
     }
 
@@ -48,6 +48,20 @@ public class Fade01 : MonoBehaviour
         fadeTitle.SetActive(false);
         Officer.SetActive(true);
        
+    }
+
+    private IEnumerator FirstSecneSwitch() {
+        yield return new
+        WaitForSeconds(1.5f);
+        TitleFade();
+
+        yield return new
+        WaitForSeconds(doBlink);
+        BlinkEye();
+
+        yield return new
+        WaitForSeconds(doBlink);
+        SetFalse1SetTrue2();
     }
     
 }

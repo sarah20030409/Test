@@ -5,6 +5,8 @@ using UnityEngine;
 public class FishVender : MonoBehaviour
 {
     public GameObject fishVendorSence;
+    public GameObject HongDongSence;
+
     public Animator littlePaperAnim;
     public Animator PaperOpenAnim;
     public Animator FishVenderBackAnim;
@@ -38,5 +40,8 @@ public class FishVender : MonoBehaviour
         WaitForSeconds(PaperOpenTime);
         FishVenderBackAnim.SetBool("FishVGoBack", true);
 
+        yield return new
+        WaitForSeconds(2.0f);
+        HongDongSence.SetActive(true);
     }
 }

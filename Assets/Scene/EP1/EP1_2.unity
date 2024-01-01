@@ -185,7 +185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &35104020
 Transform:
   m_ObjectHideFlags: 0
@@ -216,6 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fishVendorSence: {fileID: 1085143182}
+  HongDongSence: {fileID: 1094686520}
   littlePaperAnim: {fileID: 1233359291}
   PaperOpenAnim: {fileID: 1690604129}
   FishVenderBackAnim: {fileID: 347836769}
@@ -3435,7 +3436,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: -2813467912831258332, guid: 433550ebe4b627446881f0dd5c4a3327,
+      objectReference: {fileID: -6629797300637803691, guid: 433550ebe4b627446881f0dd5c4a3327,
         type: 3}
     - target: {fileID: -4683669308469848369, guid: 433550ebe4b627446881f0dd5c4a3327,
         type: 3}
@@ -5456,7 +5457,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1094686521
 Transform:
   m_ObjectHideFlags: 0
