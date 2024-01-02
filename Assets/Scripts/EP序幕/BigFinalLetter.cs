@@ -87,7 +87,7 @@ public class BigFinalLetter : MonoBehaviour
         LetterMoveII.SetBool("DoorMove",true);
 
         yield return new
-        WaitForSeconds(20.0f);
+        WaitForSeconds(11.0f);
         WhiteSprite.SetActive(true);
         WhiteSwitch.SetBool("trunWhite",true);
 
