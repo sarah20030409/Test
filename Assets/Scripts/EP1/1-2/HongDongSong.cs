@@ -4,9 +4,18 @@ using UnityEngine;
 
 public class HongDongSong : MonoBehaviour
 {
+    public GameObject LightGroupI;
+    public GameObject LightGroupII;
+    public GameObject LittlePaper;
+
+    public GameObject FishVenderSence;
+    public GameObject HongSence;
+    public GameObject AnimationSence;
+
     public Animator BowHeadAnim;
     public Animator PickUpPaperAnim;
     public Animator GivePaperAnim;
+    public Animator HongSenceDown;
 
 
     // Start is called before the first frame update
@@ -33,5 +42,21 @@ public class HongDongSong : MonoBehaviour
         BowHeadAnim.SetBool("LookPaper", true);
         PickUpPaperAnim.SetBool("LookPaper", true);
 
-     }
+        yield return new
+        WaitForSeconds(5.0f);
+        HongSenceDown.SetBool("GoDown", true);
+        LittlePaper.SetActive(false);
+
+        yield return new
+        WaitForSeconds(12.0f);
+        LightGroupI.SetActive(false);
+        LightGroupII.SetActive(false);
+
+        yield return new
+        WaitForSeconds(1.0f);
+        FishVenderSence.SetActive(false);
+        HongSence.SetActive(false);
+        AnimationSence.SetActive(true);
+
+    }
 }
