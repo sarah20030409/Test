@@ -10,5 +10,14 @@ public class TouchFingerPrint : MonoBehaviour
     {
         gameObject.SetActive(false);
         Fingerprint.getFingerPrint = true;
+        SoundManager.instance.PlayFingerPrintSound();
+        SoundManager.instance.PlayAfterFingerPrintLines();
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            IfTouchFingerPrint();
+        }
     }
 }

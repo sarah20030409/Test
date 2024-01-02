@@ -3914,7 +3914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb15111e12e47404db849b7b4c34473e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LetterUp: 5
+  LetterUp: 10
   LetterUpAnim: {fileID: 962569405}
   BlinkAnim: {fileID: 1625646362}
   WuAndLetter: {fileID: 406857167}
@@ -4244,8 +4244,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 441936932}
-  - component: {fileID: 441936931}
   - component: {fileID: 441936930}
+  - component: {fileID: 441936931}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -4264,7 +4264,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -4273,7 +4273,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 5.176909
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -4361,8 +4361,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d72192ac60434d41aca3b8c9f81c11a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 441936930}
-  soundSO: {fileID: 11400000, guid: db2784f7476e2bc4eadf4e9cf8cd4558, type: 2}
+  Lines_1: {fileID: 8300000, guid: 28de5105173adac4ea1c8660747f45ec, type: 3}
+  Lines_2: {fileID: 8300000, guid: 95de3ff02020cc54c8d4cccc02ffb36b, type: 3}
+  Lines_3: {fileID: 8300000, guid: 9fb00763c67e7a949b5656234656bf06, type: 3}
+  Lines_4: {fileID: 8300000, guid: d061fb351427ca745a5690be64005589, type: 3}
+  Lines_5: {fileID: 8300000, guid: a5f6b1d22b0edee45a14c0732542185f, type: 3}
+  Lines_6: {fileID: 8300000, guid: 5b9dde3d871be1843b5e9ae55271394f, type: 3}
+  Lines_7: {fileID: 8300000, guid: 7b805e8de5762874cbf876280645cb3a, type: 3}
+  Lines_8: {fileID: 8300000, guid: 1bbf4d4b004ad5c47a02a582db44a6bf, type: 3}
+  Lines_9: {fileID: 8300000, guid: fb5fb08f61422254cb7a522c97bb1941, type: 3}
+  Lines1_DelayTime: 0
+  Lines2_DelayTime: 3
+  Lines3_DelayTime: 4.5
+  Lines4_DelayTime: 0
+  Lines5_DelayTime: 0.2
+  Lines6_DelayTime: 28.5
+  Lines7_DelayTime: 17
+  Lines8_DelayTime: 1
+  Lines9_DelayTime: 0
+  FingerPrintSoundEffect: {fileID: 8300000, guid: 55937ed880d56914aa9748a3386b7b9f,
+    type: 3}
+  ScreamingSoundEffect: {fileID: 8300000, guid: fd31357798d47f143b752d2b83f7c3e3,
+    type: 3}
+  ScreamingSoundEffect_DelayTime: 0.5
+  OceanSoundEffect: {fileID: 8300000, guid: e35d8b7562ddae14cb4ad7e79ef7fd6b, type: 3}
 --- !u!4 &441936932
 Transform:
   m_ObjectHideFlags: 0
