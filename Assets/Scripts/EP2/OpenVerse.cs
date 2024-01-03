@@ -29,7 +29,7 @@ public class OpenVerse : MonoBehaviour
 
     private IEnumerator TitleSwitch() { 
         yield return new
-        WaitForSeconds(3.0f);
+        WaitForSeconds(1.0f);
         BlackSprite.SetBool("TitleOn",true);
 
         // 1
