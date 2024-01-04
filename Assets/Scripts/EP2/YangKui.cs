@@ -46,6 +46,11 @@ public class YangKui : MonoBehaviour
         yield return new
         WaitForSeconds(1.0f);
         YangKuiRunAwayAnim.SetBool("RunAway",true);
+        SpotLightOn.SetBool("LightOn", false);
+
+        yield return new 
+        WaitForSeconds(1.0f);
+        SpotLightOn.SetBool("LightOff", true);
 
         yield return new 
         WaitForSeconds(2.0f);
