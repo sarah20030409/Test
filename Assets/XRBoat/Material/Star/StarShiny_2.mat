@@ -174,7 +174,7 @@ Material:
     - _HeightPoMAmplitude: 2
     - _HeightTessAmplitude: 2
     - _HeightTessCenter: 0.5
-    - _Intesity: 8
+    - _Intesity: 0
     - _InvTilingScale: 1
     - _Ior: 1.5
     - _IridescenceMask: 1

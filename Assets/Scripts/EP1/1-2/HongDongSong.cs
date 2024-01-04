@@ -17,24 +17,28 @@ public class HongDongSong : MonoBehaviour
     public Animator GivePaperAnim;
     public Animator HongSenceDown;
 
+    public TouchAeraController _TouchAeraController;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        //if () { }
-        StartCoroutine(ReadPaper());    
-    
 
-    }
-
-    // Update is called once per frame
-    void Update()
+   
+    public void IfSentThePaper()
     {
         
+        StartCoroutine(ReadPaper());
+        _TouchAeraController.HideTouchArea();
     }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.A))
+        {
+            StartCoroutine(ReadPaper());
+            _TouchAeraController.HideTouchArea();
+        }
+    }
+
     private IEnumerator ReadPaper() {
-        yield return new
-        WaitForSeconds(20.0f);
+        //yield return new WaitForSeconds(20.0f);
         GivePaperAnim.SetBool("GivePaper", true);
 
         yield return new
@@ -59,4 +63,6 @@ public class HongDongSong : MonoBehaviour
         AnimationSence.SetActive(true);
 
     }
+
+    
 }

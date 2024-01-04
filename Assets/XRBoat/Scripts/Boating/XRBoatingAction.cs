@@ -25,6 +25,8 @@ public class XRBoatingAction : MonoBehaviour
     [SerializeField] private Transform TrackingReference; //Use VROrign's forward direction
     public static Vector3 WorldVelocity; //About direction
 
+    [Header("Tutorial Manager")]
+    public TutorialManager _TutorialManager;
 
     private Rigidbody Rigi;
     private float CoolDownTimer;
@@ -40,7 +42,6 @@ public class XRBoatingAction : MonoBehaviour
     private void FixedUpdate()
     {
         CoolDownTimer += Time.deltaTime;
-       
         if (CoolDownTimer>=MinTimeBetweenStrokes
             && LeftHandControllerSwimReference.action.IsPressed()
             && RightHandControllerSwimReference.action.IsPressed())
@@ -72,7 +73,12 @@ public class XRBoatingAction : MonoBehaviour
         if (Rigi.velocity.sqrMagnitude >= 0.01f)
         {
             Rigi.AddForce(-(Rigi.velocity) * DragForce, ForceMode.Acceleration);
+            _TutorialManager.HideTutorial();
         }
+        else
+            _TutorialManager.ShowTutorial();
 
     }
+
+    
 }
