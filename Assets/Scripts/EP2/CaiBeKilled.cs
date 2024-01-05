@@ -5,6 +5,8 @@ using UnityEngine;
 public class CaiBeKilled : MonoBehaviour
 {
     public GameObject CaiKilledScene;
+    public GameObject KilledTitle;
+    public GameObject LectureHallScene;
 
     public Animator BlackAnim;
 
@@ -27,7 +29,11 @@ public class CaiBeKilled : MonoBehaviour
 
         yield return new
         WaitForSeconds(1.5f);
-        CaiKilledScene.SetActive(false);
+        KilledTitle.SetActive(false);
+        LectureHallScene.SetActive(true);
 
+        yield return new
+        WaitForSeconds(1.0f);
+        CaiKilledScene.SetActive(false);
     }
 }
