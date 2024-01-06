@@ -9627,6 +9627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RedCanva: {fileID: 1073725959}
   ScreenTurnRed: 6
+  SwitchToBoat: 4
 --- !u!1 &585778416
 GameObject:
   m_ObjectHideFlags: 0

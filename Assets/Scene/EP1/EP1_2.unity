@@ -4677,6 +4677,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 492358156}
+  - component: {fileID: 492358157}
   m_Layer: 0
   m_Name: (5)HDSAnimation
   m_TagString: Untagged
@@ -4701,6 +4702,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &492358157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492358155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5450a671488ab56459e567a5341aab81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SwitchTime: 15
 --- !u!1 &513777698
 GameObject:
   m_ObjectHideFlags: 0

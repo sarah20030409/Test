@@ -7,6 +7,7 @@ public class RedTitle : MonoBehaviour
     public GameObject RedCanva;
 
     public float ScreenTurnRed = 0f;
+    public float SwitchToBoat = 0f;
     void Start()
     {
         StartCoroutine(ScreenRed());
@@ -22,6 +23,10 @@ public class RedTitle : MonoBehaviour
     yield return new
     WaitForSeconds(ScreenTurnRed);
     RedCanva.SetActive(true);
+
+    yield return new
+    WaitForSeconds(SwitchToBoat);
+    ChangeSceneFunction.ChangeScenes("BoatingScene");
     }
     
 }
