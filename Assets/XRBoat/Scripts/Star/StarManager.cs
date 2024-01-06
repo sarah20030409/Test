@@ -20,6 +20,8 @@ public class StarManager : MonoBehaviour
         SetCurrentStarCircleEffect();
         SetCurrentStarStarShaders();
         
+
+
     }
     public void SetCurrentPosIndex()
     {
@@ -57,8 +59,14 @@ public class StarManager : MonoBehaviour
             {
                 StarShaders[CurrentPosIndex - 1].SetFloat("_Intesity", 10);
             }
+            else
+            {
+                StarShaders[i].SetFloat("_Intesity", 0);
+            }
             
+
         }
     }
+    
 
 }
