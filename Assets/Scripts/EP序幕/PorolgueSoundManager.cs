@@ -4,9 +4,9 @@ using UnityEngine;
 using TMPro;
 
 [RequireComponent(typeof(AudioSource))]
-public class SoundManager : MonoBehaviour
+public class PorolgueSoundManager : MonoBehaviour
 {
-    public static SoundManager instance;
+    public static PorolgueSoundManager instance;
     private AudioSource source;
 
     [Header("Lines")]
@@ -18,7 +18,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip Lines_6;
     public AudioClip Lines_7;
     public AudioClip Lines_8;
-    public AudioClip Lines_9;
+  
     [Header("Lines_Delay")]
     public float Lines1_DelayTime;
     public float Lines2_DelayTime;
@@ -28,12 +28,12 @@ public class SoundManager : MonoBehaviour
     public float Lines6_DelayTime;
     public float Lines7_DelayTime;
     public float Lines8_DelayTime;
-    public float Lines9_DelayTime;
+
     [Header("SoundEffect")]
     public AudioClip FingerPrintSoundEffect;
     public AudioClip ScreamingSoundEffect;
     public float ScreamingSoundEffect_DelayTime;
-    public AudioClip OceanSoundEffect;
+
     [Header("Text")]
     public ScreenTextManager _ScreenTextManager;
 
@@ -65,7 +65,7 @@ public class SoundManager : MonoBehaviour
 
 
     }
-    public IEnumerator AfterFingerPrintLinesPart1()
+    public IEnumerator AfterFingerPrintLinesPart()
     {
         float CurrentDelay = 0;
 
@@ -116,7 +116,7 @@ public class SoundManager : MonoBehaviour
    
     public void PlayAfterFingerPrintLines()
     {
-        StartCoroutine(AfterFingerPrintLinesPart1());
+        StartCoroutine(AfterFingerPrintLinesPart());
     }
     public void PlayFingerPrintSound()
     {
