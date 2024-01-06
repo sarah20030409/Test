@@ -5,7 +5,12 @@ using UnityEngine;
 public class Teleport_Point : MonoBehaviour
 {
     public GameObject BlackAnim;
+    public Animator WhiteAnim;
 
+    private void Start()
+    {
+        WhiteAnim.SetBool("WhiteOff",true);
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
