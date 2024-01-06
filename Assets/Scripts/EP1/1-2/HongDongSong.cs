@@ -26,14 +26,16 @@ public class HongDongSong : MonoBehaviour
         
         StartCoroutine(ReadPaper());
         _TouchAeraController.HideTouchArea();
+        EP1_2SoundManager.instance.PlayAfterGivePaper();
     }
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             StartCoroutine(ReadPaper());
             _TouchAeraController.HideTouchArea();
+            EP1_2SoundManager.instance.PlayAfterGivePaper();
         }
     }
 

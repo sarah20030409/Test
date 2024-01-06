@@ -10,8 +10,8 @@ public class TouchFingerPrint : MonoBehaviour
     {
         gameObject.SetActive(false);
         Fingerprint.getFingerPrint = true;
-        SoundManager.instance.PlayFingerPrintSound();
-        SoundManager.instance.PlayAfterFingerPrintLines();
+        PorolgueSoundManager.instance.PlayFingerPrintSound();
+        PorolgueSoundManager.instance.PlayAfterFingerPrintLines();
     }
     private void Update()
     {

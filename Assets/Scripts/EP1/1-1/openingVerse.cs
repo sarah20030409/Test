@@ -14,6 +14,7 @@ public class openingVerse : MonoBehaviour
     public Animator WhiteSwitch;
     private float SwitchSpeed = 6.0f;
     private float DelayTime = 1.5f;
+    public float DurationTime = 0f;
 
 
     // Start is called before the first frame update
@@ -78,7 +79,7 @@ public class openingVerse : MonoBehaviour
         T4.SetActive(false);
 
         yield return new
-        WaitForSeconds(DelayTime);
+        WaitForSeconds(DurationTime);
         WhiteSprite.SetActive(true);
         WhiteSwitch.SetBool("trunWhite",true);
 
