@@ -49,6 +49,6 @@ public class CQS : MonoBehaviour
 
         yield return new
         WaitForSeconds(SwitchToBoat);
-
+        ChangeSceneFunction.ChangeScenes("BoatingScene");
     }
 }
