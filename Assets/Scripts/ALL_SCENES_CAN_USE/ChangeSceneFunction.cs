@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class ChangeSceneFunction : MonoBehaviour
 {
-    
+    public static int CurrentStarIndex = 0;
     public static void ChangeScenes(string SceneName)
     {
         SceneManager.LoadSceneAsync(SceneName);
+        if(SceneName== "BoatingScene")
+            CurrentStarIndex += 1;
     }
    
 }
