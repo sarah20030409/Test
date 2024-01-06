@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: e689d91b3efb12f4e9aea1036a5d639b
   - enabled: 1
     path: Assets/XRBoat/BoatingScene.unity
-    guid: fe38a2852d1befa489f0f7ad166c75ff
+    guid: a0b28b9bf1781d046b48daf8341afa2a
   - enabled: 1
     path: Assets/Scene/EP1/EP1_2.unity
     guid: d6528d88c4d894146aeb5a48ee62acad
