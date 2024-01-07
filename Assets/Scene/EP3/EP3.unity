@@ -176,8 +176,8 @@ MonoBehaviour:
   SceneBack: {fileID: 1720492116}
   AfterSecondShave: 5
   AfterSecondTalk: 4
-  TalkDurationTime: 9
-  SwitchToBoat: 16
+  TalkDurationTime: 23
+  SwitchToBoat: 5
 --- !u!1 &113421856
 GameObject:
   m_ObjectHideFlags: 0

@@ -50,7 +50,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AddPrecomputedVelocity: 0
-    - _Alpha: -0.000574507
+    - _Alpha: -0.000579467
     - _AlphaCutoffEnable: 0
     - _AlphaDstBlend: 10
     - _AlphaSrcBlend: 1
@@ -67,7 +67,7 @@ Material:
     - _DstBlend: 10
     - _EnableBlendModePreserveSpecularLighting: 0
     - _EnableFogOnTransparent: 1
-    - _Intensity: 15.701324
+    - _Intensity: 11.202355
     - _OpaqueCullMode: 2
     - _RayTracing: 0
     - _ReceivesSSR: 1

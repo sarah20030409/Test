@@ -5,13 +5,14 @@ using UnityEngine;
 public class Teleport_Point : MonoBehaviour
 {
     public GameObject BlackAnim;
-    public Animator SwitchInAnim;
+    public GameObject SwitchInAnim;
     public string Distination;
 
     private void Start()
     {
-        SwitchInAnim.SetBool("WhiteOff",true); 
+        SwitchInAnim.SetActive(true);
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
