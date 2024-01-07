@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scene/testArea.unity
-    guid: 8124e5870f4fd4c779e7a5f994e84ad1
+    path: Assets/Scene/Head/Head.unity
+    guid: 89ca4bd5357d6c74b8c71d20afd38954
   - enabled: 1
     path: "Assets/Scene/\u5E8F\u5E55/prologueScene.unity"
     guid: 12bf336cfece25b418906fabdcb390d0
@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/EP1/EP1_2.unity
     guid: d6528d88c4d894146aeb5a48ee62acad
+  - enabled: 1
+    path: Assets/Scene/EP2/EP2.unity
+    guid: febad92fb73d66c4382392fda9a2f918
+  - enabled: 1
+    path: Assets/Scene/EP3/EP3.unity
+    guid: fadb9914dd2bf504ebc297988f8b8b65
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1d7a1e11fdde3c24cb73c608fa620eb8,
       type: 2}

@@ -11,7 +11,13 @@ public class ChangeSceneFunction : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(SceneName);
         if(SceneName== "BoatingScene")
-            CurrentStarIndex += 1;
+        {
+            CurrentStarIndex += 1;  
+        }
+        if (SceneName == "Head")
+        {
+            CurrentStarIndex = 0;
+        }
     }
    
 }
