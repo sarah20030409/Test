@@ -36,6 +36,10 @@ public class StarManager : MonoBehaviour
             {
                 TeleportPoints[CurrentPosIndex - 1].SetActive(true);
             }
+            else
+            {
+                TeleportPoints[i].SetActive(false);
+            }
             
         }
         
@@ -47,6 +51,10 @@ public class StarManager : MonoBehaviour
             if (i == CurrentPosIndex - 1)
             {
                 CircleEffects[CurrentPosIndex - 1].SetActive(true);
+            }
+            else
+            {
+                CircleEffects[i].SetActive(false);
             }
            
         }
