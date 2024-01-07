@@ -2683,7 +2683,7 @@ MonoBehaviour:
   m_text: "(\u6D77\u6D6A\u8072)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aa069d014d60fa74698506f345f2714b, type: 2}
-  m_sharedMaterial: {fileID: -2432784766808139304, guid: aa069d014d60fa74698506f345f2714b,
+  m_sharedMaterial: {fileID: 959906540528268145, guid: aa069d014d60fa74698506f345f2714b,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -16362,7 +16362,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1857149671
 Transform:
   m_ObjectHideFlags: 0
@@ -17226,7 +17226,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2014972612
 Transform:
   m_ObjectHideFlags: 0

@@ -36,7 +36,12 @@ public class EP2_SoundManager : MonoBehaviour
     public float Lines11_DelayTime;
     public float Lines12_DelayTime;
     public float Lines13_DelayTime;
-    
+    [Header("Sinning")]
+    [Header("BGM")]
+    public AudioSource Song;
+    private bool CloseBGM = false;
+    public float BGMVolume;
+    public float VolumeDecreaseSpeed;
     [Header("Text")]
     public ScreenTextManager _ScreenTextManager;
     private void Start()
@@ -45,8 +50,23 @@ public class EP2_SoundManager : MonoBehaviour
         source = GetComponent<AudioSource>();
         _ScreenTextManager.ResetScreenText();
         StartCoroutine(Ep2_Lines());
+        CloseBGM = false;
     }
-
+    private void Update()
+    {
+        if (CloseBGM)
+        {
+            if (BGMVolume >= 0)
+            {
+                BGMVolume -= Time.deltaTime * VolumeDecreaseSpeed;
+                Song.volume = BGMVolume;
+            }
+        }
+        else
+        {
+            Song.volume = BGMVolume;
+        }
+    }
     public IEnumerator Ep2_Lines()
     {
         yield return new WaitForSeconds(Lines1_DelayTime);
@@ -67,9 +87,12 @@ public class EP2_SoundManager : MonoBehaviour
         yield return new WaitForSeconds(7+Lines4_DelayTime);
         source.PlayOneShot(Lines_4);
         _ScreenTextManager.ScreenTextSet("我跟施秋霖先生一起在海邊唱歌");
+        Song.Play();
+        StartCoroutine(SingSong());
 
         yield return new WaitForSeconds(4f);
         _ScreenTextManager.ResetScreenText();
+        
 
         yield return new WaitForSeconds(Lines5_DelayTime);
         source.PlayOneShot(Lines_5);
@@ -109,5 +132,10 @@ public class EP2_SoundManager : MonoBehaviour
         yield return new WaitForSeconds(Lines13_DelayTime);
         source.PlayOneShot(Lines_13);
         
+    }
+    public IEnumerator SingSong()
+    {
+        yield return new WaitForSeconds(5);
+        CloseBGM = true;
     }
 }

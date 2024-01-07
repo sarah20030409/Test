@@ -42,7 +42,7 @@ public class EP1_2SoundManager : MonoBehaviour
     {
         yield return new WaitForSeconds(Lines1_DelayTime);
         source.PlayOneShot(Lines_1);
-        _ScreenTextManager.ScreenTextSet("當時我心裡想我們從地域來到天堂了嗎?忽然有人提醒我，這是火燒島，他就是謝桂芳");
+        _ScreenTextManager.ScreenTextSet("當時我心裡想我們從地獄來到天堂了嗎?忽然有人提醒我，這是火燒島，他就是謝桂芳");
 
         yield return new WaitForSeconds(12+Lines2_DelayTime);
         source.PlayOneShot(Lines_2);

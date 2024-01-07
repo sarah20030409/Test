@@ -61,14 +61,14 @@ public class PorolgueSoundManager : MonoBehaviour
         _ScreenTextManager.ScreenTextSet("你看你只要輕輕蓋個手印，過兩天就放你回去了啦!");
 
         yield return new WaitForSeconds(5);
-        _ScreenTextManager.ResetScreenText();
+        _ScreenTextManager.ScreenTextSet("(按下搖桿側鍵蓋手印)");
 
 
     }
     public IEnumerator AfterFingerPrintLinesPart()
     {
         float CurrentDelay = 0;
-
+        _ScreenTextManager.ResetScreenText();
         yield return new WaitForSeconds(Lines3_DelayTime);
         source.PlayOneShot(Lines_3);
         CurrentDelay += Lines3_DelayTime;

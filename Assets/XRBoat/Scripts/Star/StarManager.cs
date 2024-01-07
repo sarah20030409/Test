@@ -10,12 +10,12 @@ public class StarManager : MonoBehaviour
     public int CurrentPosIndex;
     public bool TestMode;
 
-    private void Start()
+    private void Awake()
     {
         if(!TestMode)
             SetCurrentPosIndex();
 
-
+        
         SetCurrentStarTeleportPoint();
         SetCurrentStarCircleEffect();
         SetCurrentStarStarShaders();
