@@ -1,19 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Starting : MonoBehaviour
 {
     public GameObject AirPlane;
     public GameObject BlackCover;
-
+    [SerializeField] private InputActionReference RightHandControllerGrab; //VRPress
+    public ScreenTextManager _ScreenTextManager;
 
     public float AfterSecondSwitch;
-
+    private void Start()
+    {
+        _ScreenTextManager.ScreenTextSet("(按下右搖桿前方的Trigger並觸碰光球開始)");
+    }
     public void StartGame()
     {
-        StartCoroutine(Start_Game());
-        
+        if (RightHandControllerGrab.action.IsPressed()) {
+
+            StartCoroutine(Start_Game());
+            _ScreenTextManager.ResetScreenText();
+        }
+
+       
     }
     private void Update()
     {
