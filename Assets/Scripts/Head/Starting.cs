@@ -17,13 +17,10 @@ public class Starting : MonoBehaviour
     }
     public void StartGame()
     {
-        if (RightHandControllerGrab.action.IsPressed()) {
+        StartCoroutine(Start_Game());
+        _ScreenTextManager.ResetScreenText();
 
-            StartCoroutine(Start_Game());
-            _ScreenTextManager.ResetScreenText();
-        }
 
-       
     }
     private void Update()
     {
