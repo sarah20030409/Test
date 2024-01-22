@@ -13,15 +13,15 @@ public class Starting : MonoBehaviour
     public float AfterSecondSwitch;
     private void Start()
     {
-        _ScreenTextManager.ScreenTextSet("(按下右搖桿前方的Trigger並觸碰光球開始)");
+        _ScreenTextManager.ScreenTextSet("(按住右搖桿前方的按鈕並觸碰光球開始)");
     }
     public void StartGame()
     {
-        if (RightHandControllerGrab.action.IsPressed()) {
+       
 
             StartCoroutine(Start_Game());
             _ScreenTextManager.ResetScreenText();
-        }
+        
 
        
     }
