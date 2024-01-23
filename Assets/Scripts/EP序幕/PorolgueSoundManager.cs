@@ -61,7 +61,7 @@ public class PorolgueSoundManager : MonoBehaviour
         _ScreenTextManager.ScreenTextSet("你看你只要輕輕蓋個手印，過兩天就放你回去了啦!");
 
         yield return new WaitForSeconds(5);
-        _ScreenTextManager.ScreenTextSet("(使用搖桿側鍵蓋手印)");
+        _ScreenTextManager.ScreenTextSet("(按住搖桿側邊蓋手印)");
 
 
     }

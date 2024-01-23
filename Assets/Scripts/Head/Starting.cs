@@ -13,7 +13,7 @@ public class Starting : MonoBehaviour
     public float AfterSecondSwitch;
     private void Start()
     {
-        _ScreenTextManager.ScreenTextSet("(按住右搖桿前方的按鈕並觸碰光球開始)");
+        _ScreenTextManager.ScreenTextSet("(觸碰光球開始)");
     }
     public void StartGame()
     {
@@ -21,16 +21,10 @@ public class Starting : MonoBehaviour
         StartCoroutine(Start_Game());
         _ScreenTextManager.ResetScreenText();
 
-       
-
-            StartCoroutine(Start_Game());
-            _ScreenTextManager.ResetScreenText();
-        
-
-
     }
     private void Update()
     {
+        
         if (Input.GetKey(KeyCode.A)) {
             StartCoroutine(Start_Game());
         }
