@@ -74,7 +74,7 @@ public class EP1_2SoundManager : MonoBehaviour
         _ScreenTextManager.ScreenTextSet("我也將紙條遞給了洪炯松前輩");
 
         yield return new WaitForSeconds(4f);
-        _ScreenTextManager.ScreenTextSet("(按住前方按鈕把紙條遞給洪炯松前輩)");
+        _ScreenTextManager.ScreenTextSet("(按住搖桿前方按鈕把紙條遞給洪炯松前輩)");
 
     }
 

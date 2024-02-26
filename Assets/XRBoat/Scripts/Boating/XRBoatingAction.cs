@@ -51,9 +51,9 @@ public class XRBoatingAction : MonoBehaviour
             
             Vector3 LocalVelocity = LeftHandVelocity + RightHandVelocity;
             
-            //LocalVelocity *= -1; //Action Dirrection Select
+            LocalVelocity *= -1; //Action Dirrection Select
 
-            if (LocalVelocity.sqrMagnitude > MinForce * MinForce)
+            if (LocalVelocity.z > MinForce)
             {
 
                 //Aniimation
